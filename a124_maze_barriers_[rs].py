@@ -6,7 +6,7 @@ walls = trtl.Turtle()
 
 wall_length = 10
 
-wall_width = 5
+wall_width = 10
 
 wall_color = 'black'
 
@@ -20,16 +20,33 @@ wall_color = 'black'
 
 for i in range(25):
   walls.left(90)
+  
   walls.forward(10)
+  
   walls.penup()
+  
   walls.forward(wall_width*2)
+  
   walls.pendown()
-  walls.forward(wall_length)
+  
+  
   walls.forward(40)
+  
   walls.left(90)
+  
   walls.forward(wall_width*2)
+  
   walls.back(wall_width*2)
+  
   walls.right(90)
+  
+  walls.forward(wall_length)
+  
+  
+  
+  
+  
+  
   wall_length = wall_length + 10
 
 walls.hideturtle()
